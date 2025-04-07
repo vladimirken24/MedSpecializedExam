@@ -15,7 +15,7 @@ function Login() {
     };
 
     if (localStorage.getItem("isLoggedIn")) {
-        navigate('/');
+        navigate('/users');
     }
 
     const handleSubmit = (e) => {
@@ -28,7 +28,7 @@ function Login() {
             return;
         }
 
-        axios.post('http://localhost:3001/login', { email, password })
+        axios.post('http://localhost:3001/', { email, password })
             .then(result => {
                 console.log(result);
                 if (result.data === "Success") {

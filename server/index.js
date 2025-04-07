@@ -12,7 +12,7 @@ mongoose.connect(
   "mongodb+srv://vladimirkenjurado2626:mRTDxliMYfB0oB3U@vladimirken.jqmjwp4.mongodb.net/medspecializedExam"
 );
 
-app.post("/login", (req, res) => {
+app.post("/", (req, res) => {
   const { email, password } = req.body;
   UsersModel.findOne({ email: email }).then((user) => {
     if (user) {
@@ -33,7 +33,7 @@ app.post("/register", (req, res) => {
     .catch((err) => res.json(err));
 });
 
-app.get("/", (req, res) => {
+app.get("/users", (req, res) => {
   CRUDUsersModel.find({})
     .then((crudUser) => res.json(crudUser))
     .catch((err) => res.json(err));

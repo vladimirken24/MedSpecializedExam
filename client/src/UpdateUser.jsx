@@ -27,7 +27,7 @@ function UpdateUser () {
         axios.put("http://localhost:3001/updateUser/"+id, {email, name, status, role})
         .then(result => {
             console.log(result)
-            navigate('/')
+            navigate('/users')
         })
         .catch(err => console.log(err))
     }

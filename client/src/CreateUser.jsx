@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import './CreateUser.css';
@@ -16,7 +15,7 @@ function CreateUser () {
         axios.post('http://localhost:3001/createUser', {email, name, status, role})
         .then(result => {
             console.log(result)
-            navigate('/')
+            navigate('/users')
         })
         .catch(err=> console.log(err))
     }

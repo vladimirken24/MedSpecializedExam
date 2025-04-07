@@ -8,14 +8,14 @@ function Users () {
     const navigate = useNavigate();    
 
     useEffect(() => {
-        axios.get('http://localhost:3001/')
+        axios.get('http://localhost:3001/users')
         .then(result => setUsers(result.data))
         .catch(err => console.log(err))
     }, [])
 
     useEffect(() => {
         if (!localStorage.getItem("isLoggedIn")) {
-            navigate('/login');
+            navigate('/');
         } else {
             axios.get('http://localhost:3001/')
                 .then(result => setUsers(result.data))
@@ -33,7 +33,6 @@ function Users () {
     return (
         <div className="users-container">
             <div className="header">
-                <Link to="/login" className="invite-button">Login</Link>
                 <Link to="/create" className="invite-button">+ Invite User</Link>
             </div>
 
