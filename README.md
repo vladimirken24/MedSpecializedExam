@@ -21,9 +21,9 @@ Open terminal by typing in keyboard:
 
 4th step (Server):
 Open another terminal by typing in keyboard:
-ctrl + shift + `
-cd server
-npm start
+- ctrl + shift + `
+- cd server
+- npm start
 
 5th step:
 test the login by typing the credentials below
