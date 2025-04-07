@@ -24,3 +24,10 @@ Open another terminal by typing in keyboard:
 ctrl + shift + `
 cd server
 npm start
+
+5th step:
+You may now test my application!
+
+---
+
+That's all, thanks
