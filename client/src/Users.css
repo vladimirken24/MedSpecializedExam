@@ -1,0 +1,81 @@
+/* General container styles */
+.users-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.header {
+  margin-bottom: 20px;
+}
+
+.invite-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.invite-button:hover {
+  background-color: #45a049;
+}
+
+/* Table styles */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Button and Link styling */
+.update-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.update-link:hover {
+  text-decoration: underline;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #e53935;
+}
+
+.delete-button:focus {
+  outline: none;
+}
+
+/* Table cell alignment for Update/Delete columns */
+td {
+  text-align: center;
+}
