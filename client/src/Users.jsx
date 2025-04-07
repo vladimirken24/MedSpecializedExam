@@ -33,6 +33,7 @@ function Users () {
     return (
         <div className="users-container">
             <div className="header">
+                <Link to="/login" className="invite-button">Login</Link>
                 <Link to="/create" className="invite-button">+ Invite User</Link>
             </div>
 
