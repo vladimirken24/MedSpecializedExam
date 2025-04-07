@@ -19,26 +19,17 @@ Open terminal by typing in keyboard:
 - cd client
 - npm run dev
 
-4th step (Client):
+4th step (Server):
 Open another terminal by typing in keyboard:
-<<<<<<< HEAD
 ctrl + shift + `
 cd server
 npm start
 
 5th step:
-You may now test my application!
-=======
-- ctrl + shift + `
-- cd server
-- npm start
-
-5th step:
-You may now test the login by typing the credentials below
+test the login by typing the credentials below
 - janedoe@gmail.com
 - janedoe
 - and after that it will direct to Users Page and you may now test!
->>>>>>> ba11bd4de50ce95a2768909aff229173aaebd786
 
 ---
 
